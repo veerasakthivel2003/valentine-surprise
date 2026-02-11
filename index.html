@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Valentine 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Welcome -->
+<section id="welcome">
+  <h1>Hey ❤️</h1>
+  <p>I have a surprise for you...</p>
+  <button onclick="openBox()">Open Surprise 🎁</button>
+</section>
+
+<!-- Surprise Box -->
+<section id="box" class="hidden">
+  <img src="assets/box.png" id="giftBox" onclick="showProposal()">
+  <p>Click the box 💝</p>
+</section>
+
+<!-- Proposal -->
+<section id="proposal" class="hidden">
+  <h2 id="typingText"></h2>
+  <div class="buttons">
+    <button onclick="sayYes()">YES 💖</button>
+    <button id="noBtn" onmouseover="moveNo()">NO 😅</button>
+  </div>
+</section>
+
+<!-- Success -->
+<section id="success" class="hidden">
+  <h1>Yayyyy! 💕</h1>
+  <p>You just made my day 💘</p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
